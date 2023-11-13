@@ -22,8 +22,7 @@ const Navbar = () => {
             </ul>
 
 
-            <div className="sm:hidden flex flex-1 justify-end items-center"
-            style={{border: "5px solid red"}}>
+            <div className="sm:hidden flex flex-1 justify-end items-center">
                 <img
                     src={toggle ? close : menu}
                     alt="menu"
@@ -31,9 +30,7 @@ const Navbar = () => {
                     onClick={() => setToggle((prev) => !prev)}
                 />
                 <div
-                    className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-                    style={{border: '3px solid black'}}
-                >
+                    className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
                     <ul className="list-none font-poppins flex flex-col justify-end items-center flex-1">
                         {navLinks.map((navLink, index) => (
                             <li
